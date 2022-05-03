@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      :root {
+        --min-width: 1200px;
+      }
+
+      .home_background {
+        position: fixed;
+        width: 100%;
+        min-width: var(--min-width);
+        height: 100%;
+        position: fixed;
+        top: -70px;
+        left: 0;
+        background-image: url('/images/home-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -2;
+      }
+
+      .home_background::before {
+        content: '';
+        width: 100%;
+        min-width: var(--min-width);
+        height: 100%;
+        position: fixed;
+        top: -70px;
+        background: linear-gradient(to top, black, 20%, transparent);
+        opacity: 0.9;
+        left: 0;
+        z-index: -2;
+      }
+
+      header {
+        min-width: var(--min-width);
+      }
+
+      section {
+        min-width: var(--min-width);
+      }
+
+      .home_section1 {
+        height: 700px;
+      }
+
+      .home_section2 {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .home_section2 .card {
+        width: 8rem;
+        border: none;
+      }
+
+      .home_section2 .card hr {
+        color: white;
+        opacity: 1;
+      }
+
+      .home_section2 .card img {
+        filter: invert(99%) sepia(0%) saturate(2128%) hue-rotate(6deg)
+          brightness(109%) contrast(101%);
+      }
+
+      .home_section3 {
+        background-color: white;
+      }
+
+      .home_section4 {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .background_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: -2;
+      }
+
+      .dim_opacity_9 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: -1;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="home_background"></div>
+    <header class="sticky-top">
+      <nav class="bg-dark py-3">
+        <ul class="nav align-items-center justify-content-center gap-5">
+          <li><a href="#" class="nav-link px-2 link-light">Home</a></li>
+          <li><a href="#" class="nav-link px-2 link-light">Features</a></li>
+          <li><a href="#" class="nav-link px-2 link-light">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 link-light">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 link-light">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="home_section1 bg-transparent d-flex justify-content-center"
+      >
+        <article>
+          <img src="/images/logo.svg" width="400" alt="logo" />
+        </article>
+      </section>
+      <section class="home_section2 py-5 text-light text-center">
+        <div class="dim_opacity_9"></div>
+        <img
+          class="background_img"
+          src="/images/section2-background.jpg"
+          width="100%"
+        />
+        <div class="py-5">
+          <h2>HOME SECTION 2</h2>
+        </div>
+        <article class="d-flex justify-content-center gap-5 py-5">
+          <div class="card bg-transparent">
+            <img
+              src="/images/sec2-img1.png"
+              class="card-img-top"
+              alt="sec2-img1"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <img
+              src="/images/sec2-img2.png"
+              class="card-img-top"
+              alt="sec2-img2"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text text-light text-center">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <img
+              src="/images/sec2-img3.png"
+              class="card-img-top"
+              alt="sec2-img3"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text text-light text-center">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="home_section3 py-5 text-light text-center">
+        <div class="py-5">
+          <h2>HOME SECTION 3</h2>
+        </div>
+        <article class="d-flex justify-content-center gap-5 py-5">
+          <div class="card bg-transparent">
+            <img
+              src="/images/sec2-img1.png"
+              class="card-img-top"
+              alt="sec2-img1"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <img
+              src="/images/sec2-img2.png"
+              class="card-img-top"
+              alt="sec2-img2"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text text-light text-center">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <img
+              src="/images/sec2-img3.png"
+              class="card-img-top"
+              alt="sec2-img3"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text text-light text-center">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="home_section4 py-5 text-light text-center">
+        <div class="dim_opacity_9"></div>
+        <img
+          class="background_img"
+          src="/images/section4-background.jpg"
+          width="100%"
+        />
+        <div class="py-5">
+          <h2>HOME SECTION 4</h2>
+        </div>
+        <article class="d-flex justify-content-center gap-5 py-5">
+          <div class="card bg-transparent">
+            <img
+              src="/images/sec2-img1.png"
+              class="card-img-top"
+              alt="sec2-img1"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <img
+              src="/images/sec2-img2.png"
+              class="card-img-top"
+              alt="sec2-img2"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text text-light text-center">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <img
+              src="/images/sec2-img3.png"
+              class="card-img-top"
+              alt="sec2-img3"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text text-light text-center">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
