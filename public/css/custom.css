@@ -1,0 +1,207 @@
+:root {
+  --header-height: 75px;
+  --view-height: calc(100vh - var(--header-height));
+  --width-980: 980px;
+  --border-bottom: 1px solid #f1f1f1;
+  --color-light: #f1f1f1;
+  --font-size-normal: 1.2rem;
+  --font-weight-normal: 300;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2f2f2f;
+  border-bottom: var(--border-bottom);
+  width: 100%;
+}
+
+header nav {
+  width: var(--width-980);
+  margin: 0 auto;
+}
+
+header nav ul {
+  width: var(--width-980);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+header nav a {
+  color: var(--color-light);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+}
+/* header */
+
+main {
+  position: relative;
+  top: var(--header-height);
+  left: 0;
+}
+
+.section1 {
+  position: relative;
+}
+
+.section1 .background_container {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  z-index: -2;
+  width: 100%;
+}
+
+.section1 .background_container .background_dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--view-height);
+  background: linear-gradient(to top, black, 20%, transparent);
+  opacity: 0.9;
+}
+
+.section1 .background_container img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  min-width: var(--width-980);
+  height: var(--view-height);
+}
+
+.section1 article {
+  width: var(--width-980);
+  margin: 0 auto;
+}
+
+.section1 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: var(--view-height);
+}
+
+/* :root {
+  --skip-height: 75px;
+  --width-980: 980;
+}
+
+body {
+  position: relative;
+}
+
+.home_container {
+  width: 100%;
+  min-width: var(--width-980);
+  min-height: 100%;
+}
+
+.home_background_img {
+  position: fixed;
+  top: var(--skip-height);
+  left: 0;
+  object-fit: contain;
+  min-width: var(--width-980);
+
+  z-index: -2;
+}
+
+.home_background {
+  position: fixed;
+  min-width: var(--width-980);
+  width: 100%;
+  position: fixed;
+  top: var(--skip-height);
+  left: 0;
+  background-image: url('/images/home-background.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.home_background::before {
+  content: '';
+  width: 100%;
+  min-width: var(--width-980);
+  height: 100%;
+  position: fixed;
+  top: var(--skip-height);
+  background: linear-gradient(to top, black, 20%, transparent);
+  opacity: 0.9;
+  left: 0;
+  z-index: -2;
+}
+
+header {
+  min-width: var(--width-980);
+}
+
+header nav {
+  height: var(--skip-height);
+}
+
+main {
+  width: 100%;
+  min-width: var(--width-980);
+}
+
+section {
+  min-width: var(--width-980);
+}
+
+.home_section1 {
+  height: calc(100vh - var(--skip-height));
+}
+
+.home_section2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.home_section2 .card {
+  width: 8rem;
+  border: none;
+}
+
+.home_section2 .card hr {
+  color: white;
+  opacity: 1;
+}
+
+.home_section2 .card img {
+  filter: invert(99%) sepia(0%) saturate(2128%) hue-rotate(6deg)
+    brightness(109%) contrast(101%);
+}
+
+.home_section3 {
+  background-color: white;
+}
+
+.home_section4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.background_img {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: -2;
+}
+
+.dim_opacity_8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+} */
